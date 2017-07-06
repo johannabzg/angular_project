@@ -1,0 +1,7 @@
+p {
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    height: auto;
+    width: 100%;
+}
