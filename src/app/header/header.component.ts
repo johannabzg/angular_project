@@ -5,7 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
     template: `
-<nav><img [src]="titre"></nav>
+<nav><img [src]="titre">
+<ul>
+<li *ngFor="let lien_nav of liens">{{lien_nav.name}}</li>
+
+</ul></nav>
   
 `
   
@@ -15,6 +19,13 @@ export class HeaderComponent implements OnInit {
 title = 'CryptoBaguette';
 titre: string ='assets/titre_cb.png';
 
+liens = [
+    new lien_nav( 1, 'lien1'),
+     new lien_nav( 2, 'lien2'),
+     new lien_nav( 3, 'lien3'),
+     new lien_nav( 4, 'lien4'),
+     new lien_nav( 5, 'lien5'),
+];
 
   constructor() { 
   
@@ -24,5 +35,12 @@ titre: string ='assets/titre_cb.png';
   }
 
 }
-/*var myvar = document.createElement('img');
-myvar.src = "titre_cb.png"*/
+
+export class lien_nav {
+    constructor(
+    public id: number,
+    public name: string) {}
+}
+
+
+
