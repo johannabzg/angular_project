@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
     template: `
 <nav><img [src]="titre">
 <ul>
-<li *ngFor="let lien_nav of liens">{{lien_nav.name}}</li>
+<li *ngFor="let lien_nav of liens"><a routerLink="/" routerLinkActive="active">{{lien_nav.name}}</a></li>
 
 </ul></nav>
   
