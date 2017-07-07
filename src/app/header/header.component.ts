@@ -10,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 <li *ngFor="let lien_nav of liens"><a routerLink="/" routerLinkActive="active">{{lien_nav.name}}</a></li>
 
 </ul></nav>
-  
+  <router-outlet></router-outlet>
 `
   
     
