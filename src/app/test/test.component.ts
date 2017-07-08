@@ -4,10 +4,10 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-test',
   templateUrl: './test.component.html',
   styleUrls: ['./test.component.css'],
-    template: `<div></div>`
+    template: `<div>{{title}}</div>`
 })
 export class TestComponent implements OnInit {
-
+ title = "bloc testcomponent"
   constructor() { }
 
   ngOnInit() {

@@ -1,5 +1,8 @@
 div {
-    height: 150px;
-    width: 560px;
-    background-color: red;
+    position: absolute;
+    top: 20%;
+    left: 3%;
+    height: 250px;
+    width: 350px;
+    background-color: #fff;
 }

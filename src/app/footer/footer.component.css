@@ -1,7 +1,8 @@
 p {
     position: absolute;
     bottom: 0;
-    background-color: red;
-    height: auto;
+     background-image: url(../../assets/fond.jpg);
+    height: 50px;
     width: 100%;
+    color: aliceblue;
 }

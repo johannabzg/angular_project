@@ -8,17 +8,10 @@ import { RouterModule, Routes } from '@angular/router';
 import { TestComponent } from './test/test.component';
 
 const appRoutes: Routes = [
-  { path: 'lien_nav/1', component: TestComponent  },
-  { path: 'lien_nav/2',      component: TestComponent },
-  {
-    path: 'lien_nav/3',
-    component: TestComponent 
-    
-  },
-  { path: 'lien_nav/4',
-    component: TestComponent 
-    
-  },
+  { path: 'lien_nav/1', component: TestComponent },
+  { path: 'lien_nav/2', component: TestComponent },
+  { path: 'lien_nav/3', component: TestComponent },
+  { path: 'lien_nav/4', component: TestComponent },
   
 ];
 
@@ -26,14 +19,12 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent,
-        
-        TestComponent,
+    FooterComponent,  
+    TestComponent
   ],
   imports: [
     BrowserModule,
-      RouterModule.forRoot(
-      appRoutes)
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
